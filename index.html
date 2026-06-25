@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="venekogym2.css" defer />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VenecoGym</title>
+    <script src="venekogym2.js" defer></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#registro">Registro</a></li>
+      </ul>
+    </nav>
+
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+      <h1>VenecoGym</h1>
+      <p>Transforma tu cuerpo, fortalece tu mente.</p>
+    </section>
+
+    <!-- 3 PÁRRAFOS -->
+    <section>
+      <h2>¿Quiénes Somos?</h2>
+
+      <p>
+        VenecoGym es un gimnasio moderno diseñado para ayudarte a alcanzar tus
+        objetivos físicos mediante entrenamientos personalizados y equipamiento
+        de última generación.
+      </p>
+
+      <br />
+
+      <p>
+        Contamos con entrenadores profesionales que te acompañarán durante todo
+        tu proceso, ya sea para ganar masa muscular, perder peso o mejorar tu
+        condición física.
+      </p>
+
+      <br />
+
+      <p>
+        Nuestro compromiso es ofrecer un ambiente motivador, seguro y cómodo
+        para que cada persona pueda desarrollar la mejor versión de sí misma.
+      </p>
+    </section>
+
+    <!-- GALERÍA (5 IMÁGENES) -->
+    <section id="galeria">
+      <h2>Galería</h2>
+
+      <div class="galeria">
+        <img
+          src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600"
+          alt="Gym 1"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600"
+          alt="Gym 2"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600"
+          alt="Gym 3"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600"
+          alt="Gym 4"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=600"
+          alt="Gym 5"
+        />
+      </div>
+    </section>
+
+    <!-- LISTA -->
+    <section id="servicios" class="servicios">
+      <h2>Nuestros Servicios</h2>
+
+      <ul>
+        <li>Entrenamiento personalizado</li>
+        <li>Área de pesas</li>
+        <li>Clases grupales</li>
+        <li>Cardio y resistencia</li>
+        <li>Asesoría nutricional</li>
+      </ul>
+    </section>
+
+    <section id="registro">
+      <h2>Registro de Usuarios</h2>
+
+      <form id="formulario">
+        <input type="text" id="usuario" placeholder="Nombre" />
+        <p id="mensajeUsuario"></p>
+
+        <input type="password" id="contrasena" placeholder="Contraseña" />
+        <p id="mensajeContrasena"></p>
+
+        <input type="email" id="correo" placeholder="Correo electrónico" />
+        <p id="mensajecorreo"></p>
+
+        <input type="numbers" id="telefono" placeholder="Teléfono" />
+        <p id="mensajetelefono"></p>
+
+        <input type="numbers" id="edad" placeholder="Edad" />
+        <p id="mensajeEdad"></p>
+
+        <label>
+          <input type="checkbox" id="terminos" />
+          Acepto los términos y condiciones
+        </label>
+
+        <button onclick="comprobar(event)">Iniciar sesión</button>
+
+        <p class="error" id="error"></p>
+      </form>
+    </section>
+    <div id="created-by">
+      <p>Web by:</p>
+      <ul>
+        <li>Mauricio</li>
+        <li>Steffany</li>
+        <li>Alejandro</li>
+        <li>Lucía</li>
+        <li>Yaiver</li>
+      </ul>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 VenecoGym - Todos los derechos reservados.</p>
+    </footer>
+    <script>
+      const toggle = document.querySelector(".nav-toggle");
+      const menu = document.querySelector(".nav-menu");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
